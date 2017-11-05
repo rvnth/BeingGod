@@ -18,11 +18,13 @@ using RSUnityToolkit;
 public class PointCloudViewer1 : MonoBehaviour {
 	
 	#region Public Fields
-	
+
+
+	public int id;
 	/// <summary>
 	/// The point cloud material
 	/// </summary>
-	public Material PointCloudMaterial = null;	
+	public Material PointCloudMaterial = null;
 	
 	/// <summary>
 	/// The max depth value.
@@ -50,6 +52,8 @@ public class PointCloudViewer1 : MonoBehaviour {
 	private DrawImages _drawImagesComponent;
 	private bool detectedOnce = false;
 	private GameObject trapezoid;
+
+	private bool enabledFaceTrack = true;
 	#endregion
 	
 	#region Private methods
@@ -121,7 +125,6 @@ public class PointCloudViewer1 : MonoBehaviour {
 	}
 	void Update()
 	{
-		
 	}
 	// Update is called once per frame
 	void OnFaceDetected()
@@ -130,6 +133,13 @@ public class PointCloudViewer1 : MonoBehaviour {
 		{
 			CreateMesh();
 			detectedOnce = true;
+			this.transform.parent.GetComponent<HoG_handled>().faceCreated [id] = true;
+			enabled = false;
+			foreach (Trigger trgr in GetComponent<SendMessageAction>().SupportedTriggers)
+				trgr.Disable(); //CleanRules();
+			this.GetComponent<SendMessageAction>().enabled = false;
+				//Debug.Log(trgr.Rules[0].FriendlyName.ToString());
+			//EoG.GetComponent<TrackingAction> ().enabled = true;
 		}
 	}
 	void CreateMesh () 

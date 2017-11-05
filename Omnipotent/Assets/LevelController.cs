@@ -7,7 +7,7 @@ public class LevelController : MonoBehaviour {
 
 	bool gamePaused = false;
 	bool levelInProgress = false;
-	public int currentLevel=1;
+	public int currentLevel = 1;
 	bool levelInit = true;
 	float tutTimer = 15.0f;
 	public GameObject TutImage;
@@ -252,7 +252,7 @@ public class LevelController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		currentLevel = 1;
+		currentLevel = 5;
 		//init Person manager
 		peopleManager = GameObject.FindGameObjectWithTag ("PeopleManager");
 		//int nosPeople = currentLevel * Random.Range (10,humans2create);

@@ -708,6 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef6c84da8f301141abf1195f97cee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   PointCloudMaterial: {fileID: 2100000, guid: c16decd94065ca44b8f8d37977dbeb15, type: 2}
   MaxDepthVal: 90
   UseUVMap: 0
@@ -3011,6 +3012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef6c84da8f301141abf1195f97cee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   PointCloudMaterial: {fileID: 2100000, guid: c16decd94065ca44b8f8d37977dbeb15, type: 2}
   MaxDepthVal: 90
   UseUVMap: 0
@@ -4002,6 +4004,7 @@ GameObject:
   - 4: {fileID: 242762731}
   - 65: {fileID: 242762733}
   - 54: {fileID: 242762732}
+  - 114: {fileID: 242762734}
   m_Layer: 0
   m_Name: HoG
   m_TagString: Untagged
@@ -4054,6 +4057,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &242762734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 242762730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52476191e601a9b4ca4f828d6cc0d854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EoG: {fileID: 5982385}
+  faceCreated: 
 --- !u!1 &242930617
 GameObject:
   m_ObjectHideFlags: 0
@@ -12385,6 +12401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef6c84da8f301141abf1195f97cee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   PointCloudMaterial: {fileID: 2100000, guid: c16decd94065ca44b8f8d37977dbeb15, type: 2}
   MaxDepthVal: 90
   UseUVMap: 0
@@ -15647,8 +15664,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1045941934}
-  m_LocalRotation: {x: .201169744, y: .0490503386, z: .0100866482, w: -.978275597}
-  m_LocalPosition: {x: 65.1062698, y: -84.3037415, z: -127.55497}
+  m_LocalRotation: {x: -.258819073, y: 0, z: 0, w: .965925813}
+  m_LocalPosition: {x: -62.7000008, y: -43.8600006, z: -448.200012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19716,7 +19733,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1339668157}
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -20495,6 +20512,7 @@ MonoBehaviour:
   faceMesh2: {fileID: 778376743}
   faceMesh3: {fileID: 1891718372}
   faceMesh4: {fileID: 184648236}
+  EoG: {fileID: 5982385}
 --- !u!114 &1393125389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28529,6 +28547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef6c84da8f301141abf1195f97cee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   PointCloudMaterial: {fileID: 2100000, guid: c16decd94065ca44b8f8d37977dbeb15, type: 2}
   MaxDepthVal: 90
   UseUVMap: 0

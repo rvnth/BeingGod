@@ -57,7 +57,7 @@ public class SendMessageAction : BaseAction {
 			{
 				SendMessage(FunctionName, trgr);
 			}
-		}			
+		}
 	}
 	
 	#endregion
